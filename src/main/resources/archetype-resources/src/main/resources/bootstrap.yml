@@ -1,0 +1,9 @@
+---
+server:
+  port: $!{port}
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8001
+
