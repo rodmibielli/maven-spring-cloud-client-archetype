@@ -2,8 +2,15 @@
 server:
   port: $!{port}
 
+encrypt:
+  key: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 spring:
+  profiles:
+      active: default
   cloud:
     config:
-      uri: http://localhost:8001
-
+      username: $!{configUsername}
+      password: $!{configPassword}
+      uri: http://${configServerHost}:${configServerPort}
+      fail-fast: true

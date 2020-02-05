@@ -6,10 +6,23 @@
   <requiredProperties>
     <requiredProperty key="projectName">
     </requiredProperty>
-    <requiredProperty key="appName">
+    <requiredProperty key="dockerId">
+      <defaultValue></defaultValue>
     </requiredProperty>
     <requiredProperty key="port">
-      <defaultValue>${PORT:${SERVER_PORT:0}}</defaultValue>
+      <defaultValue>8080</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="configServerHost">
+      <defaultValue>localhost</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="configServerPort">
+      <defaultValue>8888</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="configUsername">
+      <defaultValue>scott</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="configPassword">
+      <defaultValue>tiger</defaultValue>
     </requiredProperty>
   </requiredProperties>
 
